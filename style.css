@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.header-right {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-icon {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn.admin-btn {
+    border: 3px solid #7b3cff;
+}
+
+.btn.admin-btn:hover {
+    background-color: #7b3cff;
+    border-color: #7b3cff;
+}
+
+.btn.kader-btn:hover {
+    background-color: #444;
+}
+
+.login-container, .form-container, .dashboard-container {
+    text-align: left;
+}
+
+.login-container h1, .form-container h1, .dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.login-btn, .daftar-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .daftar-btn:hover {
+    background-color: #7b3cff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #ccc;
+}
+
+table th, table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
